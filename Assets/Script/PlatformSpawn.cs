@@ -23,7 +23,7 @@ public class PlatformSpawn : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Instantiate(Platform[Random.Range(0, Platform.Length)], new Vector3(transform.position.x, transform.position.y - 3, transform.position.z + movePlatform.ForwardPlatform),Quaternion.identity);
+            Instantiate(Platform[Random.Range(0, Platform.Length)], new Vector3(transform.position.x, transform.position.y - 4, transform.position.z + movePlatform.ForwardPlatform),Quaternion.identity);
              
 
 
