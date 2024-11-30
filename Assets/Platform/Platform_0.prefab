@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5525755986534182776}
-  - component: {fileID: 7030830951579894698}
-  - component: {fileID: 5322813541069706212}
   m_Layer: 0
   m_Name: Platform_0
   m_TagString: Untagged
@@ -34,51 +32,6 @@ Transform:
   - {fileID: 5863530124760491177}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
---- !u!114 &7030830951579894698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866721530733737589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d86fccb358247fe4291671ea92af294c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Platform:
-  - {fileID: 866721530733737589}
-  - {fileID: 866721530733737589, guid: 03b53f29fda045b469940507cb808f3c, type: 3}
-  - {fileID: 866721530733737589, guid: b70206c260884ef46b0849b00599ad6d, type: 3}
-  - {fileID: 866721530733737589, guid: 138606beb569d7b4280c7e07dfe15ea8, type: 3}
-  - {fileID: 866721530733737589, guid: 4705e595599942e47b989ecbaa074455, type: 3}
-  - {fileID: 866721530733737589, guid: b833edf6935356240ac176ea91ed8464, type: 3}
-  - {fileID: 866721530733737589, guid: 834f4872e6b370341baec5609e8a14b3, type: 3}
-  - {fileID: 866721530733737589, guid: a8b81ae02b0114e4c9d715a3053f6cf9, type: 3}
-  - {fileID: 866721530733737589, guid: e41b7b11940bd8240a07a8dd280ca6cc, type: 3}
-  move: {fileID: 0}
-  playerCont: {fileID: 0}
---- !u!65 &5322813541069706212
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866721530733737589}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5.5791373, y: 7.070839, z: 0.69547266}
-  m_Center: {x: 0.76765656, y: 1.1399952, z: 23.212246}
 --- !u!1 &3592803154144106942
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +44,8 @@ GameObject:
   - component: {fileID: 6355038124401207121}
   - component: {fileID: 6342954225092806407}
   - component: {fileID: 3634179205529610387}
+  - component: {fileID: 1451812181373460468}
+  - component: {fileID: 3884252891708260825}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -184,3 +139,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000001, y: 1.000001, z: 1.0000001}
   m_Center: {x: 0, y: -0.00000023841858, z: 0.000000029802322}
+--- !u!114 &1451812181373460468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592803154144106942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86fccb358247fe4291671ea92af294c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Platform:
+  - {fileID: 866721530733737589}
+  - {fileID: 866721530733737589, guid: 03b53f29fda045b469940507cb808f3c, type: 3}
+  - {fileID: 866721530733737589, guid: b70206c260884ef46b0849b00599ad6d, type: 3}
+  - {fileID: 866721530733737589, guid: 138606beb569d7b4280c7e07dfe15ea8, type: 3}
+  - {fileID: 866721530733737589, guid: 4705e595599942e47b989ecbaa074455, type: 3}
+  - {fileID: 866721530733737589, guid: b833edf6935356240ac176ea91ed8464, type: 3}
+  - {fileID: 866721530733737589, guid: 834f4872e6b370341baec5609e8a14b3, type: 3}
+  - {fileID: 866721530733737589, guid: a8b81ae02b0114e4c9d715a3053f6cf9, type: 3}
+  - {fileID: 866721530733737589, guid: e41b7b11940bd8240a07a8dd280ca6cc, type: 3}
+  move: {fileID: 0}
+  playerCont: {fileID: 0}
+--- !u!65 &3884252891708260825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592803154144106942}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 9.303214, z: 0.027864946}
+  m_Center: {x: 0.0089238705, y: 3.8936365, z: 0.31502104}
