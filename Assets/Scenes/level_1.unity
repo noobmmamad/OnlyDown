@@ -588,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerrb: {fileID: 686904594}
   moveSpeed: 1
-  moveSpeedlef: 12
+  moveSpeedlef: 22
   startSpeed: 8
   timestartSpeed: 70
   timestartSpeedCounter: 0
